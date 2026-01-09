@@ -30,7 +30,7 @@ jobs:
   
    - name: Deploy to Pages repository
      run: |
-      git clone https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/repositorio pages-repo
+      git clone https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/NachoGamallo/NachoGamallo.github.io pages-repo
       rm -r pages-repo/*
       cp -r build/web/* pages-repo/
       cd pages-repo
